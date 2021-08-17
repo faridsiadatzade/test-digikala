@@ -1,0 +1,319 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  padding-top: 330px;
+  -moz-transition: padding-top 0.5s ease;
+  -o-transition: padding-top 0.5s ease;
+  -webkit-transition: padding-top 0.5s ease;
+  transition: padding-top 0.5s ease;
+}
+
+header {
+  width: 100%;
+  height: 200px;
+  background-color: #3498db;
+  text-align: center;
+  position: relative;
+}
+header h1 {
+  font-size: 42px;
+  color: #fff;
+  line-height: 150px;
+  font-weight: 100;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+header nav {
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+  line-height: 60px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-around
+}
+header nav a {
+  color: #fff;
+  display: inline-block;
+  padding: 10px 15px;
+  line-height: 1;
+  text-decoration: none;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+
+h2 {
+  font-size: 34px;
+  text-transform: uppercase;
+  font-weight: 100;
+  line-height: 2;
+  color: #2c3e50;
+}
+
+p {
+  margin-bottom: 2rem;
+  line-height: 2;
+  color: #7f8c8d;
+}
+
+.wrapper {
+  width: 800px;
+  margin: 0 auto;
+}
+
+/* Sticky Header Style */
+/* ---------------------------------------- */
+body.sticky-header {
+  padding-top: 100px;
+}
+body.sticky-header header {
+  height: 60px;
+  background-color: rgba(52, 152, 219, 0.9);
+}
+body.sticky-header header h1 {
+  -moz-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  -webkit-transform: scale(0, 0);
+  transform: scale(0, 0);
+}
+
+
+/* Footer */
+footer {
+	width: 100%;
+	height: 100px;
+	background-color: #3498db;
+	text-align: center;
+	position: relative;
+  }
+
+
+
+/*****************************
+	Card
+******************************/	
+
+.bg-img {
+  height: 350px;
+  /* background-image: url('https://www.searchpng.com/wp-content/uploads/2019/01/Nike-Shoe-PNG-715x715.png'); */
+  background-color: #37474f;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: all 800ms;
+}
+
+.bg-color {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 142, 204, 0.246);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: all 800ms;
+
+}
+
+.bg-color-data {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  color: #fff;
+  background: #37474F;
+}
+
+.name {
+  padding: 30px 0px 0px 25px;
+  color: white;
+  text-shadow: 1px 1px 5px rgb(105,
+      105,
+      105);
+  transition: all 800ms;
+}
+
+.size {
+
+  padding: 15px 5px 0px 15px;
+  transition: all 800ms;
+}
+
+.model {
+
+  padding: 5px 5px 0px 15px;
+}
+
+.color {
+
+  padding: 5px 5px 0px 15px;
+}
+
+.color-orange {
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  background: #e0350e;
+  text-align: center;
+  margin-left: auto;
+  /* margin-right: auto; */
+  transition: all 800ms;
+}
+
+.color-blue {
+  border-radius: 50px;
+  transition: all 800ms;
+
+  width: 30px;
+  height: 30px;
+  background: rgb(0, 153, 255);
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.color-green {
+  border-radius: 50px;
+  transition: all 800ms;
+
+  width: 30px;
+  height: 30px;
+  background: rgb(43, 199, 15);
+  text-align: center;
+  /* margin-left: auto; */
+  margin-right: auto;
+}
+
+.price {
+  color: white;
+  margin-top: 10px;
+  font-family: 'PT Serif', serif;
+  font-size: 28px;
+}
+
+.link {
+  opacity: 0.5;
+  padding: 5px 5px 0px 15px;
+}
+
+.doll {
+  color: #FDD835;
+}
+
+.btn-danger {
+  background-color: #e0350e !important;
+}
+
+.main:hover {
+  border-radius: 10px;
+  box-shadow: 10px 10px 25px rgb(26, 26, 26);
+}
+
+.bg-img:hover .bg-color {
+  background-color: transparent;
+}
+
+.bg-img:hover .name {
+  font-size: 24px;
+}
+
+.color-orange:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 0px 5px #000;
+}
+
+.color-blue:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 0px 5px #000;
+}
+
+.color-green:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 0px 5px #000;
+}
+
+.header-bascket {
+  position: relative;
+    display: block;
+}
+
+.header-bascket span {
+  font-size: 10px;
+  font-size: .714rem;
+  line-height: 16px;
+  color: #fff;
+  width: 20px;
+  height: 18px;
+  background: #ef394e;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 8px;
+  font-weight: 900;
+  border: 2px solid #fff;
+  position: absolute;
+  bottom: -6px;
+  right: -9px;
+}
