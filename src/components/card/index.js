@@ -25,11 +25,11 @@ const Card = ({ item }) => {
                 <p className="card-text product-title">{item.title}</p>
                 <p className="product-ranck">{ item.rating.rate } <span>{'(' + item.rating.count + ')'}</span></p>
                 <div className="product-price">
-                    <div className="price">
-                    <div className="btn-add-bascket-home" onClick={handleProductClick}>
+                    <div className="price d-flex">
+                    <div className="btn-add-bascket-home d-flex mr-3" onClick={handleProductClick}>
                                 افزودن به سبد خرید
                         </div>
-                        <div className="price-value">
+                        <div className="price-value d-flex ml-3">
                             <del>{ item.price.rrp_price }</del>
                             <div className="price-selling">{ item.price.rrp_price } <span>تومان</span></div>
                         </div>
